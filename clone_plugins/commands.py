@@ -17,7 +17,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import *
 from config import BOT_USERNAME, ADMINS
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, InputMediaPhoto
-from config import PICS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE
+from config import PICS, AUTH_CHANNEL1, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE
 import re
 import json
 import base64
@@ -62,9 +62,9 @@ def get_size(size):
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
-    if AUTH_CHANNEL:
+    if AUTH_CHANNEL1:
         try:
-            btn = await is_subscribed(client, message, AUTH_CHANNEL)
+            btn = await is_subscribed(client, message, AUTH_CHANNEL1)
             if btn:
                 username = (await client.get_me()).username
                 if message.command[1]:
