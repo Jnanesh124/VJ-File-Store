@@ -3,6 +3,7 @@
 # Ask Doubt on telegram @KingVJ01
 
 import os
+from os import environ
 import logging
 import random
 import asyncio
@@ -29,7 +30,7 @@ BATCH_FILES = {}
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-
+id_pattern = re.compile(r'^.\d+$')
 def get_size(size):
     """Get size in readable format"""
 
