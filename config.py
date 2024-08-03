@@ -21,7 +21,7 @@ AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('
 
 AUTH_CHANNEL1 = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL1', '').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 
-API = environ.get("API", "") # shortlink api
+API = environ.get("API", "766185149277536bd3b9bbf1ccc75cb97a411729") # shortlink api
 URL = environ.get("URL", "") # shortlink domain without https://
 BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
 VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
@@ -65,11 +65,11 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.shareus.io") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "hRPS5vvZc0OGOEUQJMJzPiojoVK2") # shortlink api
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "Mdisk.pro") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "766185149277536bd3b9bbf1ccc75cb97a411729") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Open_Linkl") # how to open link 
 
 # Website Info:
