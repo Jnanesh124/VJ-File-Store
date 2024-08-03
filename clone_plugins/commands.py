@@ -22,7 +22,7 @@ import json
 import base64
 from config import DB_URI as MONGO_URL
 from pymongo import MongoClient
-from utils import verify_user, check_token
+from utils import verify_user, check_token, check_verification, get_token 
 
 async def is_subscribed(bot, query, channel):
     btn = []
