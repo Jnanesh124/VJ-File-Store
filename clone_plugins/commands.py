@@ -16,7 +16,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import *
 from config import BOT_USERNAME, ADMINS
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, InputMediaPhoto
-from config import PICS, AUTH_CHANNEL1, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE
+from config import PICS, AUTH_CHANNEL1, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
 import re
 import json
 import base64
